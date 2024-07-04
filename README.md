@@ -7,4 +7,4 @@
 [![Static Badge](https://img.shields.io/badge/Figma-purple?style=flat&logo=figma&logoColor=white)](https://www.figma.com/design/4jhkneyhAFAIKKP60BDUsd/Little-Lemon?node-id=0-1&t=pzWJ0DDqFaLpZWK3-1)
 #### Landing Page Design
 
-![LANDING PAGE](src\assets\readmepreview.png)
+![design preview](src/assets/readmepreview.png)
