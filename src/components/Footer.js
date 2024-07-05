@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/Logo.svg";
+import logo from "../assets/footerLogo.png";
 import {
   HStack,
   Link as ChakraLink,
@@ -28,11 +28,11 @@ const Contact = (props) => {
 function Footer() {
   return (
     <footer>
-      <Box w="100vw" className="footerContainer" p={"10vh"}>
+      <Box w="100vw" className="footerContainer" h={493} display={'flex'} alignItems={'center'} justifyContent={'center'}>
         <HStack justifyContent={"center"} alignItems={"center"} gap={"10vw"}>
-          <Image src={logo} alt="Little Lemon Logo" />
+          <Image src={logo} alt="Little Lemon Logo" h={245}/>
 
-          <HStack gap={"100px"}>
+          <HStack alignItems={'first-baseline'} gap={"100px"}>
             <VStack alignItems={"flex-start"} gap={8}>
               <h1 className="footerHeader">Doormat Navigation</h1>
 
