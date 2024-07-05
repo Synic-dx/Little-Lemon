@@ -6,7 +6,7 @@ import { HStack } from "@chakra-ui/react";
 function Nav() {
   return (
     <nav>
-      <HStack gap={8}>
+      <HStack gap={8} className="navLink">
         <ChakraLink as={ReactRouterLink} to="/">Home</ChakraLink>
 
         <a href="#">About</a>
