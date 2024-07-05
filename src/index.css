@@ -9,7 +9,6 @@
   --light-grey: #EDEFEE;
   --dark-grey: #333333;
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    margin: 0;
     overflow-x: hidden;
     user-drag: none;
   -webkit-user-drag: none;
@@ -19,22 +18,30 @@
   -ms-user-select: none;
 }
 
+body {
+  margin: 0 5vw 0 5vw;
+}
+
 .navLink {
   font-family: Karla, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 18px;
+  font-size: calc(1.3177vw);
   color: var(--dark-grey);
 }
 
 .bigHeader {
-  font: 64px 'Markarazi Text', 'Times New Roman', Times, serif;
+  font: 4.685vw 'Markarazi Text', 'Times New Roman', Times, serif;
 }
 
 .subHeader {
-  font: 40px 'Markarazi Text', 'Times New Roman', Times, serif;
+  font:  2.928vw 'Markarazi Text', 'Times New Roman', Times, serif;
 }
 
 .cardHeader {
-  font: bold 18px/1.5 'Markarazi Text', 'Times New Roman', Times, serif;
+  font: bold 1.3177vw 'Markarazi Text', 'Times New Roman', Times, serif;
+}
+
+.cardText {
+  font:  1.1713vw 'Karla', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .darkBackgroundFont {
@@ -43,10 +50,6 @@
 
 .lightBackgroundFont {
   color: var(--dark-grey)
-}
-
-.cardText {
-  font: 16px/1.5 'Karla', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .dropShadow {
@@ -63,9 +66,9 @@
 }
 
 .footerHeader {
-  font-size: 22px;
+  font-size: calc(1.6105vw);
 }
 
 .footerText {
-  font-size: 20px;
+  font-size: calc(1.464vw);
 }

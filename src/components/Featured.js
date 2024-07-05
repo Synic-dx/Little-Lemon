@@ -2,9 +2,9 @@ import React from "react";
 
 function Featured() {
   return (
-  <>
-  Featured
-  </>
+  <section id="featured">
+    Featured
+  </section>
   )
 }
 

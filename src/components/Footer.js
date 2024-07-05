@@ -28,9 +28,9 @@ const Contact = (props) => {
 function Footer() {
   return (
     <footer>
-      <Box w="100vw" className="footerContainer" h={493} display={'flex'} alignItems={'center'} justifyContent={'center'}>
+      <Box w="100vw" className="footerContainer" p={'117'} display={'flex'} alignItems={'center'} justifyContent={'center'}>
         <HStack justifyContent={"center"} alignItems={"center"} gap={"10vw"}>
-          <Image src={logo} alt="Little Lemon Logo" h={245}/>
+          <Image src={logo} alt="Little Lemon Logo" w={'10.2489vw'}/>
 
           <HStack alignItems={'first-baseline'} gap={"100px"}>
             <VStack alignItems={"flex-start"} gap={8}>
