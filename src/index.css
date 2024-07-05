@@ -10,7 +10,6 @@
   --dark-grey: #333333;
   --shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     overflow-x: hidden;
-    user-drag: none;
   -webkit-user-drag: none;
   user-select: none;
   -moz-user-select: none;
