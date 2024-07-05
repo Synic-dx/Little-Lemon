@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Featured() {
   return (
-    <div>Featured</div>
+  <>
+  Featured
+  </>
   )
 }
 
-export default Featured
+export default Featured;
