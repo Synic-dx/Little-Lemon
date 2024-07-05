@@ -10,7 +10,7 @@ function Header() {
       <Box w='100vw'>
       <HStack justifyContent={'center'} alignItems={'center'} gap={'10vw'}>
         <Link to="/">
-        <Image src={ logo } alt='Logo' />
+        <Image src={ logo } alt='Logo' p={1}/>
         </Link>
         <Nav />
       </HStack>

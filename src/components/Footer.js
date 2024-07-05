@@ -5,21 +5,21 @@ import {
   Link as ChakraLink,
   VStack,
   Image,
-  Box,
+  Box
 } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
-    <VStack alignItems={"flex-start"}>
-      <a href="#" target="_blank">
-        Address
+    <VStack alignItems={"flex-start"} className={props.className}>
+      <a href="#">
+        <address>Chicago</address>
       </a>
-      <a href="#" target="_blank">
-        Phone Number
+      <a href="#">
+        8901760XXX
       </a>
-      <a href="#" target="_blank">
-        Email
+      <a href="#">
+        littlelemon@gmail.com
       </a>
     </VStack>
   );
@@ -28,15 +28,15 @@ const Contact = () => {
 function Footer() {
   return (
     <footer>
-      <Box w="100vw" className="footerContainer" p={'10vh'}>
+      <Box w="100vw" className="footerContainer" p={"10vh"}>
         <HStack justifyContent={"center"} alignItems={"center"} gap={"10vw"}>
           <Image src={logo} alt="Little Lemon Logo" />
 
-          <HStack gap={'100px'}>
+          <HStack gap={"100px"}>
             <VStack alignItems={"flex-start"} gap={8}>
-              <h1>Doormat Navigation</h1>
+              <h1 className="footerHeader">Doormat Navigation</h1>
 
-              <VStack alignItems={"flex-start"}>
+              <VStack alignItems={"flex-start"} className="footerText">
                 <ChakraLink as={ReactRouterLink} to="/">
                   Home
                 </ChakraLink>
@@ -56,13 +56,13 @@ function Footer() {
             </VStack>
 
             <VStack alignItems={"flex-start"} gap={8}>
-              <h1>Contact</h1>
-              <Contact />
+              <h1 className="footerHeader">Contact</h1>
+              <Contact className="footerText"/>
             </VStack>
 
             <VStack alignItems={"flex-start"} gap={8}>
-              <h1>Social Media Links</h1>
-              <Contact />
+              <h1 className="footerHeader">Social Media Links</h1>
+              <Contact className="footerText"/>
             </VStack>
           </HStack>
         </HStack>
