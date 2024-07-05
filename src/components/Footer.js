@@ -13,10 +13,10 @@ const Contact = (props) => {
   return (
     <VStack alignItems={"flex-start"} className={props.className}>
       <a href="#">
-        <address>Chicago</address>
+        <address>123 Citrus Lane</address>
       </a>
       <a href="#">
-        8901760XXX
+      123-456-7890
       </a>
       <a href="#">
         littlelemon@gmail.com
@@ -28,13 +28,13 @@ const Contact = (props) => {
 function Footer() {
   return (
     <footer>
-      <Box w="100vw" className="footerContainer" p={'117'} display={'flex'} alignItems={'center'} justifyContent={'center'}>
-        <HStack justifyContent={"center"} alignItems={"center"} gap={"10vw"}>
-          <Image src={logo} alt="Little Lemon Logo" w={'10.2489vw'}/>
+      <Box w="100vw" className="footerContainer" pr={'15vw'} pl={'15vw'} pt={'40px'} pb={'40px'} display={'flex'} alignItems={'center'} justifyContent={'center'}>
+        <HStack justifyItems={"space-between"} alignItems={"center"} gap={"10vw"}>
+          <Image src={logo} alt="Little Lemon Logo" w={'9.2489vw'}/>
 
           <HStack alignItems={'first-baseline'} gap={"100px"}>
             <VStack alignItems={"flex-start"} gap={8}>
-              <h1 className="footerHeader">Doormat Navigation</h1>
+              <h1 className="footerText">SITEMAP</h1>
 
               <VStack alignItems={"flex-start"} className="footerText">
                 <ChakraLink as={ReactRouterLink} to="/">
@@ -56,12 +56,12 @@ function Footer() {
             </VStack>
 
             <VStack alignItems={"flex-start"} gap={8}>
-              <h1 className="footerHeader">Contact</h1>
+              <h1 className="footerText">CONTACT</h1>
               <Contact className="footerText"/>
             </VStack>
 
             <VStack alignItems={"flex-start"} gap={8}>
-              <h1 className="footerHeader">Social Media Links</h1>
+              <h1 className="footerText">SOCIAL MEDIA LINKS</h1>
               <Contact className="footerText"/>
             </VStack>
           </HStack>

@@ -1,10 +1,25 @@
 import React from 'react'
+import { Box, HStack, VStack, Button, Image } from '@chakra-ui/react'
+import heroPic from '../assets/restauranfood.svg'
 
 function Hero() {
   return (
     <section id="hero">
-      Hero
-    </section>  
+      <Box w="100vw" pt={8} pb={8} pr={'15vw'} pl={'15vw'} className="heroContainer" display={'flex'} alignItems={'center'} justifyContent={'center'} >
+        <HStack>
+          <VStack alignItems={'first-baseline'} gap={10}>
+            <VStack alignItems={'first-baseline'}>
+            <h1 className={'bigHeader title'} fontColor={'#F4CE14'}>Little Lemon</h1>
+            <h2 className={'subHeader'}>Chicago</h2>
+            </VStack>
+            <p className={'sectionText'}>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
+            <Button colorScheme='yellow' w={168} h={34} color={'#333333'}>Reserve a Table</Button>
+          </VStack>
+
+          <Image src={heroPic} width={300} alt={'Restaurant Food'} ml={40}/>
+        </HStack>
+      </Box>
+    </section>
   )
 }
 

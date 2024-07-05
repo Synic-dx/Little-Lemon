@@ -7,10 +7,10 @@ import { HStack, Image, Box } from "@chakra-ui/react";
 function Header() {
   return (
     <header>
-      <Box w='100vw'>
-      <HStack justifyContent={'center'} alignItems={'center'} gap={'10vw'}>
+      <Box w='100vw' pr={'15vw'} pl={'15vw'}>
+      <HStack justifyContent={'space-between'} alignItems={'center'} gap={'10vw'} p={2}>
         <Link to="/">
-        <Image src={ logo } alt='Logo' p={1}/>
+        <Image src={ logo } alt='Logo' />
         </Link>
         <Nav />
       </HStack>

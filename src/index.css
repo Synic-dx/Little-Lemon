@@ -23,24 +23,37 @@ body {
 
 .navLink {
   font-family: Karla, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: calc(1.3177vw);
+  font-size: 18px;
   color: var(--dark-grey);
 }
 
 .bigHeader {
-  font: 4.685vw 'Markarazi Text', 'Times New Roman', Times, serif;
+  font: 64px 'Markarazi Text', 'Times New Roman', Times, serif;
+}
+
+.title {
+  color: var(--yellow);
 }
 
 .subHeader {
-  font:  2.928vw 'Markarazi Text', 'Times New Roman', Times, serif;
+  font:  40px 'Markarazi Text', 'Times New Roman', Times, serif;
+}
+
+.sectionText {
+  font: 18px 'Karla', Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.heroContainer, .testimonialContainer {
+  background-color: var(--dark-green);
+  color: var(--light-grey);
 }
 
 .cardHeader {
-  font: bold 1.3177vw 'Markarazi Text', 'Times New Roman', Times, serif;
+  font: bold 18px 'Markarazi Text', 'Times New Roman', Times, serif;
 }
 
 .cardText {
-  font:  1.1713vw 'Karla', Verdana, Geneva, Tahoma, sans-serif;
+  font:  16px 'Karla', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .darkBackgroundFont {
@@ -56,18 +69,11 @@ body {
 }
 
 .footerContainer {
-  background-color: var(--dark-grey);
+  background-color: var(--dark-green);
   color: var(--light-grey);
 }
 
-.footerHeader, .footerText {
-  font-family: Karla, Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.footerHeader {
-  font-size: calc(1.6105vw);
-}
-
 .footerText {
-  font-size: calc(1.464vw);
+  font-family: Karla, Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
 }
