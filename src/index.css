@@ -35,6 +35,10 @@ body {
   color: var(--yellow);
 }
 
+.aboutTitle {
+  color: var(--dark-green)
+}
+
 .subHeader {
   font:  40px 'Markarazi Text', 'Times New Roman', Times, serif;
 }
@@ -65,6 +69,11 @@ body {
 .cardText {
   font:  16px 'Karla', Verdana, Geneva, Tahoma, sans-serif;
   color: var(--dark-green);
+}
+
+.reviewText {
+  font:  18px 'Karla', Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--dark-grey);
 }
 
 .darkBackgroundFont {

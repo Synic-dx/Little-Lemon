@@ -10,11 +10,11 @@ function Hero() {
         <HStack>
           <VStack alignItems={'first-baseline'} gap={10}>
             <VStack alignItems={'first-baseline'}>
-            <h1 className={'bigHeader title'} fontColor={'#F4CE14'}>Little Lemon</h1>
+            <h1 className={'bigHeader title'}>Little Lemon</h1>
             <h2 className={'subHeader'}>Chicago</h2>
             </VStack>
             <p className={'sectionText'}>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-            <ChakraLink as={ReactRouterLink} to="/booking"><Button colorScheme='yellow' w={168} h={34} color={'#333333'}>Reserve a Table</Button></ChakraLink>
+            <ChakraLink as={ReactRouterLink} to="/booking"><Button boxShadow={'rgba(0, 0, 0, 0.24) 0px 3px 8px'} colorScheme='yellow' w={168} h={34} color={'#333333'}>Reserve a Table</Button></ChakraLink>
           </VStack>
 
           <Image src={heroPic} width={300} alt={'Restaurant Food'} ml={40}/>

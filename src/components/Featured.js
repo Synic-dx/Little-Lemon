@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  Image,
-  Box,
-  HStack,
-  Button,
-  Card,
-  Flex,
-} from "@chakra-ui/react";
+import { Image, Box, HStack, Button, Card, Flex } from "@chakra-ui/react";
 import Delivery from "../assets/Delivery.svg";
 
 const featuredItems = [
@@ -38,14 +31,16 @@ function Featured() {
     <section id="featured">
       <Box
         w="100vw"
-        pt={"50px"}
-        pb={"50px"}
+        h={'110vh'}
+        pt={'40px'}
+        pb={'40px'}
         pr={"15vw"}
         pl={"15vw"}
         className="featuredContainer"
         display={"flex"}
         alignItems={"center"}
         justifyContent={"center"}
+        direction={"column"}
       >
         <Flex direction={"column"}>
           <HStack justifyContent={"space-between"} alignItems={"center"}>
@@ -56,6 +51,7 @@ function Featured() {
               h={42}
               w={131}
               fontSize={"1rem"}
+              boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
             >
               Order Online
             </Button>
@@ -68,7 +64,12 @@ function Featured() {
             gridGap={8}
           >
             {featuredItems.map((item) => (
-              <Card key={item.name} borderTopRadius={16} backgroundColor={'#D9D9D9'}>
+              <Card
+                key={item.name}
+                borderTopRadius={16}
+                backgroundColor={"#D9D9D9"}
+                boxShadow={'rgba(0, 0, 0, 0.24) 0px 3px 8px'}
+              >
                 <Image
                   src={item.getImageSrc()}
                   alt={item.name}
@@ -83,11 +84,11 @@ function Featured() {
                 >
                   <HStack justifyContent={"space-between"}>
                     <h1 className={"cardHeader"}>{item.name}</h1>
-                    <h2 className={"cardPrice"}>{item.price}</h2>
+                    <h2 className={"cardPrice"}>${item.price}</h2>
                   </HStack>
                   <p className={"cardText"}>{item.description}</p>
                   <a href="#">
-                    <HStack position={'absolute'} bottom={3}>
+                    <HStack position={"absolute"} bottom={3}>
                       <p className={"orderDelivery"}>Order a delivery</p>
                       <Image src={Delivery} alt={"Delivery"} h={"15px"} />
                     </HStack>
