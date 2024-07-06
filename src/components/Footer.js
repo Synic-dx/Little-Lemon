@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <VStack alignItems={"flex-start"} className={props.className}>
       <a href="#">
