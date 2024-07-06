@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { Link as ReactRouterLink } from "react-router-dom";
 
-const Contact = (props) => {
+const Contact = () => {
   return (
     <VStack alignItems={"flex-start"} className={props.className}>
       <a href="#">
@@ -37,7 +37,7 @@ function Footer() {
               <h1 className="footerText">SITEMAP</h1>
 
               <VStack alignItems={"flex-start"} className="footerText">
-                <ChakraLink as={ReactRouterLink} to="/">
+                <ChakraLink as={ReactRouterLink} to="/Little-Lemon">
                   Home
                 </ChakraLink>
 
@@ -45,7 +45,7 @@ function Footer() {
 
                 <a href="#">Menu</a>
 
-                <ChakraLink as={ReactRouterLink} to="/booking">
+                <ChakraLink as={ReactRouterLink} to="/Little-Lemon/booking">
                   Reservations
                 </ChakraLink>
 

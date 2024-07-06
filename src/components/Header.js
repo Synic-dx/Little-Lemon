@@ -9,7 +9,7 @@ function Header() {
     <header>
       <Box w='100vw' pr={'15vw'} pl={'15vw'}>
       <HStack justifyContent={'space-between'} alignItems={'center'} gap={'10vw'} p={2}>
-        <Link to="/">
+        <Link to="/Little-Lemon">
         <Image src={ logo } alt='Logo' />
         </Link>
         <Nav />

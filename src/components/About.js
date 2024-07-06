@@ -1,5 +1,5 @@
 import React from "react";
-import { Link as ChakraLink, Box, HStack, VStack, Image, Button } from "@chakra-ui/react";
+import { Box, VStack, Image } from "@chakra-ui/react";
 import doublePic from '../assets/doubleImages.svg';
 
 function About() {

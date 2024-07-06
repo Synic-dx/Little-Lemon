@@ -13,8 +13,8 @@ function App() {
         <VStack>
           <Header />
           <Routes>
-            <Route path="/" element={<HomeMain />}></Route>
-            <Route path="/booking" element={<BookingPage />}></Route>
+            <Route path="/Little-Lemon" element={<HomeMain />}></Route>
+            <Route path="/Little-Lemon/booking" element={<BookingPage />}></Route>
           </Routes>
           <Footer />
         </VStack>
