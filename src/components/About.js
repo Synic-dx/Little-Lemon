@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, VStack, Image } from "@chakra-ui/react";
-import doublePic from '../assets/doubleImages.svg';
+import doublePic from '../assets/doubleImages.png';
 
 function About() {
   return (
