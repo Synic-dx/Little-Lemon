@@ -1,5 +1,6 @@
 import React from 'react'
-import { Box, HStack, VStack, Button, Image } from '@chakra-ui/react'
+import { Box, HStack, VStack, Button, Image, Link as ChakraLink } from '@chakra-ui/react'
+import { Link as ReactRouterLink} from 'react-router-dom'
 import heroPic from '../assets/restauranfood.svg'
 
 function Hero() {
@@ -13,7 +14,7 @@ function Hero() {
             <h2 className={'subHeader'}>Chicago</h2>
             </VStack>
             <p className={'sectionText'}>We are a family owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
-            <Button colorScheme='yellow' w={168} h={34} color={'#333333'}>Reserve a Table</Button>
+            <ChakraLink as={ReactRouterLink} to="/booking"><Button colorScheme='yellow' w={168} h={34} color={'#333333'}>Reserve a Table</Button></ChakraLink>
           </VStack>
 
           <Image src={heroPic} width={300} alt={'Restaurant Food'} ml={40}/>

@@ -53,15 +53,18 @@ body {
 }
 
 .cardPrice {
-  font: 16px var(--yellow) 'Karla', Verdana, Geneva, Tahoma, sans-serif;
+  font: 16px 'Karla', Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--yellow);
 }
 
 .orderDelivery {
-  font: bold 16px var(--dark-grey) 'Karla', Verdana, Geneva, Tahoma, sans-serif;
+  font: bold 16px 'Karla', Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--dark-grey);
 }
 
 .cardText {
   font:  16px 'Karla', Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--dark-green);
 }
 
 .darkBackgroundFont {
@@ -84,4 +87,9 @@ body {
 .footerText {
   font-family: Karla, Verdana, Geneva, Tahoma, sans-serif;
   font-size: 16px;
+}
+
+a:hover {
+  color: var(--yellow);
+  text-decoration: none;
 }

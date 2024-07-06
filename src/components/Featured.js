@@ -1,47 +1,105 @@
 import React from "react";
-import { VStack, HStack, Image } from "@chakra-ui/react";
+import {
+  Image,
+  Box,
+  HStack,
+  Button,
+  Card,
+  Flex,
+} from "@chakra-ui/react";
 import Delivery from "../assets/Delivery.svg";
 
 const featuredItems = [
   {
     name: "Greek salad",
-    image: "../assets/greek salad.jpg",
+    getImageSrc: () => require("../assets/greek salad.jpg"),
     price: "12.99",
     description:
       "The famous greek salad of crispy lettuce, peppers, olives and our Chicago style feta cheese, garnished with crunchy garlic and rosemary croutons.",
   },
   {
     name: "Bruchetta",
-    image: "../assets/bruchetta.svg",
+    getImageSrc: () => require("../assets/bruchetta.jpg"),
     price: "5.99",
     description:
       "Our Bruschetta is made from grilled bread that has been smeared with garlic and seasoned with salt and olive oil.",
   },
   {
     name: "Lemon Dessert",
-    image: "../assets/lemon dessert.jpg",
+    getImageSrc: () => require("../assets/lemon dessert.jpg"),
     price: "5.00",
     description:
       "This comes straight from grandma’s recipe book, every last ingredient has been sourced and is as authentic as can be imagined.",
   },
 ];
 
-const Card = ({ name, image, price, description }) => {
-  return (
-    <VStack>
-      <Image src={image} alt={name} objectFit="cover" />
-      <HStack>
-        <h1 className="cardHeader">{name}</h1>
-        <h2 className="cardPrice">{price}</h2>
-      </HStack>
-      <p className="cardText">{description}</p>
-      <p className="orderDelivery">Order a Delivery {Delivery}</p>
-    </VStack>
-  );
-};
-
 function Featured() {
-  return <section id="featured">Featured</section>;
+  return (
+    <section id="featured">
+      <Box
+        w="100vw"
+        pt={"50px"}
+        pb={"50px"}
+        pr={"15vw"}
+        pl={"15vw"}
+        className="featuredContainer"
+        display={"flex"}
+        alignItems={"center"}
+        justifyContent={"center"}
+      >
+        <Flex direction={"column"}>
+          <HStack justifyContent={"space-between"} alignItems={"center"}>
+            <h1 className="bigHeader">This week’s specials!</h1>
+            <Button
+              colorScheme={"yellow"}
+              color={"#333333"}
+              h={42}
+              w={131}
+              fontSize={"1rem"}
+            >
+              Order Online
+            </Button>
+          </HStack>
+
+          <Box
+            mt={20}
+            display="grid"
+            gridTemplateColumns="repeat(3,minmax(0,1fr))"
+            gridGap={8}
+          >
+            {featuredItems.map((item) => (
+              <Card key={item.name} borderTopRadius={16} backgroundColor={'#D9D9D9'}>
+                <Image
+                  src={item.getImageSrc()}
+                  alt={item.name}
+                  borderTopRadius={16}
+                  h={200}
+                />
+                <Flex
+                  direction={"column"}
+                  p={5}
+                  gap={5}
+                  alignContent={"first-baseline"}
+                >
+                  <HStack justifyContent={"space-between"}>
+                    <h1 className={"cardHeader"}>{item.name}</h1>
+                    <h2 className={"cardPrice"}>{item.price}</h2>
+                  </HStack>
+                  <p className={"cardText"}>{item.description}</p>
+                  <a href="#">
+                    <HStack position={'absolute'} bottom={3}>
+                      <p className={"orderDelivery"}>Order a delivery</p>
+                      <Image src={Delivery} alt={"Delivery"} h={"15px"} />
+                    </HStack>
+                  </a>
+                </Flex>
+              </Card>
+            ))}
+          </Box>
+        </Flex>
+      </Box>
+    </section>
+  );
 }
 
 export default Featured;
