@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Little-Lemon/static/css/main.4b5157d7.css",
-    "main.js": "/Little-Lemon/static/js/main.3e9e4ca0.js",
-    "static/js/453.99c1801e.chunk.js": "/Little-Lemon/static/js/453.99c1801e.chunk.js",
-    "static/media/restauranfood.svg": "/Little-Lemon/static/media/restauranfood.1e09ba0ecbd37cb2957010474c34eb37.svg",
+    "main.css": "/Little-Lemon/static/css/main.cd9d05d1.css",
+    "main.js": "/Little-Lemon/static/js/main.43379a43.js",
+    "static/js/488.10b86df2.chunk.js": "/Little-Lemon/static/js/488.10b86df2.chunk.js",
+    "static/media/restauranfood.svg": "/Little-Lemon/static/media/restauranfood.4c086d3f415075e098c544ff683a0d28.svg",
     "static/media/greek salad.jpg": "/Little-Lemon/static/media/greek salad.326b7fdd8b96a45c4e4d.jpg",
     "static/media/doubleImages.png": "/Little-Lemon/static/media/doubleImages.39650fb3ff362d86d33d.png",
     "static/media/footerLogo.png": "/Little-Lemon/static/media/footerLogo.d09eb2af6c5a2225eedf.png",
-    "static/media/Logo.svg": "/Little-Lemon/static/media/Logo.6c132dfefa69396bba43f72aa595e62f.svg",
+    "static/media/Logo.svg": "/Little-Lemon/static/media/Logo.2c379c7ea7eb07402bfc7700915316de.svg",
     "static/media/bruchetta.jpg": "/Little-Lemon/static/media/bruchetta.0e8da839b3e7fac8c35b.jpg",
     "index.html": "/Little-Lemon/index.html",
-    "static/media/Delivery.svg": "/Little-Lemon/static/media/Delivery.4c839fb0b1a9ef972a7b18c620cc51a5.svg",
-    "main.4b5157d7.css.map": "/Little-Lemon/static/css/main.4b5157d7.css.map",
-    "main.3e9e4ca0.js.map": "/Little-Lemon/static/js/main.3e9e4ca0.js.map",
-    "453.99c1801e.chunk.js.map": "/Little-Lemon/static/js/453.99c1801e.chunk.js.map"
+    "static/media/Delivery.svg": "/Little-Lemon/static/media/Delivery.ba9bd45e7d2bfe7c99368b4e6a665983.svg",
+    "main.cd9d05d1.css.map": "/Little-Lemon/static/css/main.cd9d05d1.css.map",
+    "main.43379a43.js.map": "/Little-Lemon/static/js/main.43379a43.js.map",
+    "488.10b86df2.chunk.js.map": "/Little-Lemon/static/js/488.10b86df2.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4b5157d7.css",
-    "static/js/main.3e9e4ca0.js"
+    "static/css/main.cd9d05d1.css",
+    "static/js/main.43379a43.js"
   ]
 }
