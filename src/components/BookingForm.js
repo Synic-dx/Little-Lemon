@@ -9,10 +9,11 @@ import {
   Box,
   VStack,
   HStack,
+  Heading,
 } from "@chakra-ui/react";
 import { useForm, Controller } from "react-hook-form";
 
-const BookingForm = () => {
+const BookingForm = ({ onBookingSubmit }) => {
   const {
     handleSubmit,
     control,
@@ -20,13 +21,16 @@ const BookingForm = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log("Form data:", data);
+    onBookingSubmit(data);
   };
 
   return (
     <form onSubmit={handleSubmit(onSubmit)}>
       <VStack px={20} py={10} gap={5}>
-        <HStack w={'100%'}>
+        <Heading as="h1" size={"xl"} fontFamily={"Karla"} mb={5}>
+          Book a Table Now
+        </Heading>
+        <HStack w={"100%"}>
           <FormControl id="firstName" isInvalid={errors.firstName}>
             <FormLabel>First Name</FormLabel>
             <Controller
@@ -58,7 +62,7 @@ const BookingForm = () => {
           </FormControl>
         </HStack>
 
-        <FormControl id="phoneNumber" isInvalid={errors.phoneNumber} w={'100%'}>
+        <FormControl id="phoneNumber" isInvalid={errors.phoneNumber} w={"100%"}>
           <FormLabel>Phone Number</FormLabel>
           <Controller
             name="phoneNumber"
@@ -73,7 +77,7 @@ const BookingForm = () => {
           <FormErrorMessage>{errors.phoneNumber?.message}</FormErrorMessage>
         </FormControl>
 
-        <HStack w={'100%'}>
+        <HStack w={"100%"}>
           <FormControl id="date" isInvalid={errors.date}>
             <FormLabel>Date</FormLabel>
             <Controller
@@ -104,7 +108,7 @@ const BookingForm = () => {
             <FormErrorMessage>{errors.occasion?.message}</FormErrorMessage>
           </FormControl>
         </HStack>
-        <HStack w={'100%'}>
+        <HStack w={"100%"}>
           <FormControl id="guestCount" isInvalid={errors.guestCount}>
             <FormLabel>Number of Guests</FormLabel>
             <Controller
@@ -141,7 +145,13 @@ const BookingForm = () => {
           </FormControl>
         </HStack>
 
-        <Button type="submit" colorScheme="yellow" mt={4} boxShadow={'rgba(0, 0, 0, 0.24) 0px 3px 8px'} w={'100%'}>
+        <Button
+          type="submit"
+          colorScheme="yellow"
+          mt={4}
+          boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
+          w={"100%"}
+        >
           Reserve Table
         </Button>
       </VStack>
