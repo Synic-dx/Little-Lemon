@@ -9,7 +9,7 @@ function Nav() {
       <HStack gap={8} className="navLink">
         <ChakraLink as={ReactRouterLink} to="/Little-Lemon">Home</ChakraLink>
 
-        <a href="#">About</a>
+        <a href="#about">About</a>
 
         <a href="#">Menu</a>
 

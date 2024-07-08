@@ -10,14 +10,17 @@ function App() {
   return (
     <ChakraProvider>
       <Router>
-        <VStack>
-          <Header />
-          <Routes>
-            <Route path="/Little-Lemon" element={<HomeMain />}></Route>
-            <Route path="/Little-Lemon/booking" element={<BookingPage />}></Route>
-          </Routes>
-          <Footer />
-        </VStack>
+          <VStack>
+            <Header />
+            <Routes>
+              <Route path="/Little-Lemon" element={<HomeMain />}></Route>
+              <Route
+                path="/Little-Lemon/booking"
+                element={<BookingPage />}
+              ></Route>
+            </Routes>
+            <Footer />
+          </VStack>
       </Router>
     </ChakraProvider>
   );
